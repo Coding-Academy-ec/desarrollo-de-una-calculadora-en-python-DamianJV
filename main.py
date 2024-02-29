@@ -15,8 +15,11 @@ def multiplicar(a, b):
 
 def dividir(a, b):
     # aqui se realiza la division de dos numeros
-    c = a / b
-    return c
+    if (b == 0): 
+        return "Error: No se puede dividir por cero"
+    else:
+        c = a / b
+        return c
 
 def main():
     num1 = float(input("Ingrese el primer número: "))
